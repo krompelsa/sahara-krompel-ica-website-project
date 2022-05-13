@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/donate.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+SC&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ef664ace82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="flex-container nav-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/zoo_logos/logo_rhino_white.svg" alt="Horizon Zoo Logo">
+                </a>
+            </div>
+    
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="encounters.html">Animals</a>
+                <a href="#">Experiences</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="heading">
+            <h1>Help Support the Animals</h1>
+            <p>Support for Horizon Zoo can be provided in a variety of ways such as through donating items from our wish list, adopting an animal, serving as a volunteer, becoming a member, or making a money donation of any amount.</p>
+        </div>
+    </header>
+
+    <section id="membership">
+        <div class="donate-headings">
+            <h2>Membership</h2>
+            <p>Horizon Zoo offers several membership packages perfect for individuals, families, and grandparents. Memberships are the best value, paying for themselves in as little as two to three visits per year.</p>
+        </div>
+
+        <div class="flex-container">
+            <div class="membership-card">
+                <h3>Basic Level Benefits</h3>
+                <ul>
+                    <li>Unlimited standard admission to the zoo for one year</li>
+                    <li>10% Discount at the gift shop and concessions</li>
+                    <li>E-mail newsletter, announcing exciting happenings throughout the year!</li>
+                    <li>Special <b>“Members Only Party”</b> at the zoo</li>
+                    <li><u>Prices for individuals & families</u></li>
+                </ul>
+                <div class="membership-btn">
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+            </div>
+            <div class="membership-card">
+                <h3>Deluxe Level Benefits</h3>
+                <ul>
+                    <li><b>All Basic member benefits PLUS</b></li>
+                    <li>Free parking for one vehicle per visit to the zoo</li>
+                    <li>Discounts on birthday parties and summer camp</li>
+                    <li>Free admission to Halloween and Christmas events</li>
+                    <li><u>Prices for individuals & families</u></li>
+                </ul>
+                <div class="membership-btn">
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+            </div>
+            <div class="membership-card">
+                <h3>Premium Level Benefits</h3>
+                <ul>
+                    <li><b>All Basic and Deluxe member benefits PLUS</b></li>
+                    <li>6 One-Time Guest Passes</li>
+                    <li>15% Discount (instead of 10%) at the gift shop and concessions</li>
+                    <li>One free guided tour for 4 people in April, June, and October</li>
+                    <li><u>Prices for individuals & families</u></li>
+                </ul>
+                <div class="membership-btn">
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donation">
+        <div class="donate-headings">
+            <h2>Money Donations Form</h2>
+            <p>Working together, we can ensure that the opportunity to enjoy wildlife and wild places will be here for future generations. Your tax deductible gift helps fund Horizon Zoo's wildlife conservation and research efforts, as well as valuable education and animal care programs. By donating today, you can help us save animals from extinction.</p>
+            <p>If you would prefer to just make a money contribution, please complete the following form:</p>
+        </div>
+    
+        <div id="donation-form">
+            <form action="#">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" class="donation-text" id="name" name="name" placeholder="Your full name">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" class="donation-text" id="email" name="email" placeholder="Your email address">
+                <p>Would you like to make a money donation to the Horizon Zoo?</p>
+                <input type="radio" id="yes" name="y/n" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="y/n" value="No">
+                <label for="no">No</label>
+                <p>Please indicate the amount of the money donation that you would like to make to Horizon Zoo:</p>
+                <input type="radio" id="$25" name="$25" value="$25">
+                <label for="$25">$25</label>
+                <input type="radio" id="$50" name="$50" value="$50">
+                <label for="$50">$50</label>
+                <input type="radio" id="$100" name="$100" value="$100">
+                <label for="$100">$100</label>
+                <input type="radio" id="$250" name="$250" value="$250">
+                <label for="$250">$250</label>
+                <input type="radio"  id="other" name="other" value="">Other <input type="text" name="other"/>
+                <p>How frequently would you like to make this donation?</p>
+                <input list="frequency">
+                <datalist id="frequency">
+                    <option value="One Time Gift">One Time Gift</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Semiannually">Semiannually</option>
+                    <option value="Annually">Annually</option>
+                </datalist>
+                <p>If you would like to make a memorial or tribute gift, provide additional information below:</p>
+                <textarea name="additional-information" id="additional-information" cols="50" rows="2"></textarea>
+                <br>
+                <input type="submit" value="Donate" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="flex-container">
+            <div id="address-and-phone">
+                <h3>Address & Phone</h3>
+                <p>138 Atlantis Lane</p>
+                <p>Kingsport IL 121164</p>
+                <p>222-222-2222</p>
+            </div>
+            <div id="emails">
+                <h3>Emails</h3>
+                <a href="mailto:membership@horizonzoo.org">membership@horizonzoo.org</a>
+                <a href="mailto:development@horizonzoo.org">development@horizonzoo.org</a>
+                <a href="mailto:events@horizonzoo.org">events@horizonzoo.org</a>
+                <a href="mailto:education@horizonzoo.org">education@horizonzoo.org</a>
+                <a href="mailto:volunteer@horizonzoo.org">volunteer@horizonzoo.org</a>
+            </div>
+        </div>
+        <hr>
+        <div id="socials">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

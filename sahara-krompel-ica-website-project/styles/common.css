@@ -1,0 +1,161 @@
+/* Browser Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Default Font Styles */
+html {
+    font-family: 'Alegreya', serif;
+    font-size: 17px;
+    color: #111;
+}
+
+h1, h2, h3 {
+    font-family: 'Alegreya SC', serif;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Default Link Styles */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section Heading Styles */
+.heading {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.heading > p {
+    margin: 0px;
+}
+
+/* Flex Container Styles */
+.flex-container {
+    display: flex;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #968167;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    font-family: 'Alegreya SC', serif;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #7d6c56;
+}
+
+/* Header Styles */
+
+.nav-wrapper {
+    position: absolute;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-wrapper > .logo {
+    width: 350px;
+}
+
+.nav-wrapper > .nav-links > a {
+    padding: 0px 15px;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-wrapper > .nav-links > a:hover {
+    color: #968167;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+footer > .flex-container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > .flex-container > #emails {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > .flex-container > #emails > a:hover {
+    color: #968167;
+}
+
+footer > hr {
+    margin: 50px 0px;
+}
+
+footer > #socials {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+footer > #socials > a > i {
+    transition: 0.3s ease-in-out;
+}
+
+footer > #socials > a > i:hover {
+    color: #968167;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .nav-wrapper > .nav-links > a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+}

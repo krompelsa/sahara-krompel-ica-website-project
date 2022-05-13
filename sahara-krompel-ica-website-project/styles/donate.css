@@ -1,0 +1,107 @@
+/* Nav Styles */
+
+nav > .nav-wrapper {
+    background-color: rgba(17, 17, 17, 0.50);
+}
+
+/* Heading Styles */
+
+header {
+    background-image: url(../images/zoo_images/lions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 450px;
+    color: #fff;
+}
+
+header > .heading {
+    background-color: rgba(17, 17, 17, 0.50);
+    padding: 100px;
+    border-radius: 5px;
+}
+
+header > .heading > h1 {
+    margin: 0px;
+    padding-top: 0px;
+    margin-bottom: 50px;
+}
+
+.donate-headings {
+    text-align: center;
+}
+
+/* Membership Section Styles */
+
+#membership > .flex-container > .membership-card {
+    border: 2px solid #968167;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 50px;
+    width: 100%;
+}
+
+#membership > .flex-container > .membership-card > ul > li > b {
+    font-family: 'Alegreya SC', serif;
+}
+
+#membership > .flex-container > .membership-card > ul > li:nth-last-child(1) {
+    color: #7d6c56;
+}
+
+#membership > .flex-container > .membership-card > .membership-btn > .btn:nth-child(2) {
+    padding-top: 25px;
+}
+
+/* Donation Section Styles */
+
+#donation > .donate-headings > p {
+    padding: 0px 50px;
+}
+
+#donation > #donation-form {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #7d6c56;
+    border-radius: 5px;
+    margin: 50px 500px;
+    padding: 50px 0px
+}
+
+#donation > #donation-form > form > .donation-text {
+    padding: 5px;
+    padding-right: 500px;
+    font-family: 'Alegreya', serif;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+#donation > #donation-form > form > textarea {
+    font-family: 'Alegreya', serif;
+    border-radius: 5px;
+}
+
+#donation > #donation-form > form > input[type="submit"] {
+    font-size: 16px;
+}
+
+@media screen and (max-width:600px) {
+
+    #membership > .flex-container > .membership-card {
+        margin: 10px 0px;
+    }
+
+    #donation > #donation-form > form > .donation-text {
+        padding-right: 65%;
+    }
+
+    #donation > #donation-form {
+        flex-direction: column;
+        padding: 5px;
+        margin: 10px;
+    }
+
+}
